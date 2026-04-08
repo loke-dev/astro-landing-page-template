@@ -39,5 +39,9 @@ const { title, description } = Astro.props
   </head>
   <body class="min-h-screen transition-colors duration-300">
     <slot />
+    <script>
+      import { inject } from '@vercel/analytics'
+      inject()
+    </script>
   </body>
 </html>
