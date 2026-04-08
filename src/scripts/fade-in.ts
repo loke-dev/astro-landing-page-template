@@ -1,0 +1,13 @@
+const observer = new IntersectionObserver(
+  (entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-visible')
+        observer.unobserve(entry.target)
+      }
+    }
+  },
+  { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+)
+
+document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el))

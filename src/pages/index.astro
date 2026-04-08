@@ -1,0 +1,31 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import NavBar from '@/components/layout/NavBar.astro'
+import Footer from '@/components/layout/Footer.astro'
+import HeroSection from '@/components/sections/HeroSection.astro'
+import TechStackSection from '@/components/sections/TechStackSection.astro'
+import FeaturesSection from '@/components/sections/FeaturesSection.astro'
+import HowItWorksSection from '@/components/sections/HowItWorksSection.astro'
+import StatsSection from '@/components/sections/StatsSection.astro'
+import CtaSection from '@/components/sections/CtaSection.astro'
+---
+
+<BaseLayout
+  title="Launchpad — Astro Landing Page Template"
+  description="A minimal, production-ready Astro landing page template with Tailwind CSS. Fast by default. Beautiful out of the box."
+>
+  <NavBar />
+  <main>
+    <HeroSection />
+    <TechStackSection />
+    <FeaturesSection />
+    <HowItWorksSection />
+    <StatsSection />
+    <CtaSection />
+  </main>
+  <Footer />
+
+  <script>
+    import '@/scripts/fade-in'
+  </script>
+</BaseLayout>

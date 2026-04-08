@@ -1,0 +1,31 @@
+---
+const stats = [
+  { value: '100', label: 'Lighthouse', sublabel: 'Performance score' },
+  { value: '<50ms', label: 'TTFB', sublabel: 'Time to first byte' },
+  { value: '0', label: 'Dependencies', sublabel: 'Runtime JS by default' },
+  { value: 'SSG', label: 'Pre-rendered', sublabel: 'Static HTML output' },
+]
+---
+
+<section id="stats" class="py-20 sm:py-28">
+  <div class="section-container">
+    <div class="grid grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4">
+      {
+        stats.map((stat, i) => (
+          <div
+            class="fade-in text-center"
+            style={`transition-delay: ${i * 100}ms`}
+          >
+            <div class="text-4xl font-bold tracking-tight sm:text-5xl">
+              {stat.value}
+            </div>
+            <div class="mt-2 text-sm font-medium">{stat.label}</div>
+            <div class="mt-1 text-xs text-muted-foreground">
+              {stat.sublabel}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

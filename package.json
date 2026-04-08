@@ -1,0 +1,31 @@
+{
+  "name": "astro-landing-page-template",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev --port 4000",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint --cache .",
+    "format": "prettier --write \"src/**/*.{ts,tsx,astro,css,json}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,astro,css,json}\"",
+    "typecheck": "astro check && tsc --noEmit"
+  },
+  "dependencies": {
+    "astro": "^6.1.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "tailwindcss": "^4.2.2",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.9.2"
+  }
+}
