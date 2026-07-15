@@ -16,7 +16,6 @@
     "typecheck": "astro check && tsc --noEmit"
   },
   "dependencies": {
-    "@vercel/analytics": "^2.0.1",
     "astro": "^6.1.5"
   },
   "devDependencies": {

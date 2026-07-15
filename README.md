@@ -9,7 +9,7 @@ A production-ready landing page template built with Astro and Tailwind CSS v4.
 - **Dark Mode** — System-aware theme toggle with localStorage persistence, no flash
 - **TypeScript** — Strict mode throughout
 - **SEO Ready** — Meta tags, semantic HTML, accessible markup
-- **Deploy Ready** — Works on Vercel, Netlify, or any static host
+- **Deploy Ready** — Works on Cloudflare Workers or any static host
 
 ## Stack
 
@@ -36,7 +36,7 @@ pnpm dev
 
 ## Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/loke-dev/astro-landing-page-template)
+[Live demo](https://astro-landing-page.loke.dev)
 
 ## License
 
