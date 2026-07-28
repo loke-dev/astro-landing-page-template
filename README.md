@@ -13,12 +13,15 @@ A production-ready landing page template built with Astro and Tailwind CSS v4.
 
 ## Stack
 
-- [Astro 6](https://astro.build)
+- [Astro 7](https://astro.build)
 - [Tailwind CSS v4](https://tailwindcss.com)
 - [TypeScript](https://typescriptlang.org)
 - [Vite](https://vitejs.dev)
 
 ## Get Started
+
+Use a supported Node.js release (22.22.3+, 24.16.0+, or 26.3.0+) and pnpm
+11.17.0.
 
 ```bash
 git clone https://github.com/loke-dev/astro-landing-page-template
@@ -26,6 +29,19 @@ cd astro-landing-page-template
 pnpm install
 pnpm dev
 ```
+
+## Verify
+
+Run the complete local quality gate before shipping:
+
+```bash
+pnpm check
+pnpm deploy:dry
+pnpm audit --audit-level moderate
+```
+
+TypeScript 6 is intentional: it is the newest release supported by both
+`@astrojs/check` and `typescript-eslint`.
 
 ## Customise
 
@@ -37,6 +53,12 @@ pnpm dev
 ## Deploy
 
 [Live demo](https://astro-landing-page.loke.dev)
+
+After authenticating Wrangler, deploy with:
+
+```bash
+pnpm deploy
+```
 
 ## License
 
